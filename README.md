@@ -29,4 +29,4 @@ will write every pair of optimal EF-RF(+) completions from the specified input f
 
 `python3 RF+.py -i input.newick -a csvfile.csv`
 
-will compute every pairwise RF(+) distance and store collected information into the csvfile.csv file provided
+will compute every pairwise RF(+) distance and store collected information into the csvfile.csv file provided.

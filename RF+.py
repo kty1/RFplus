@@ -26,8 +26,6 @@ import itertools
 import csv
 import time
 
-import sagephyHandler
-
 
 
 class LCAMapping:

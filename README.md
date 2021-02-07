@@ -21,4 +21,4 @@ will print every pair of optimal EF-RF(+) completions. The “-u” option can b
 
 `python3 RF+.py -i input.newick -o output.txt -u -ext`
 
-will write every pair of optimal EF-RF(+) completions from the specified input file of unrooted trees into the specified output file.
+will write every pair of optimal EF-RF(+) completions from the specified input file of unrooted trees into the specified output file. An example input file MarsupialSubset1.newick is provided.

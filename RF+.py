@@ -783,10 +783,10 @@ class compareTree:
         outgroup1, outgroup2 = None, None
         for leaf in self.t2:
             if(self.tLeafset.get(str(leaf.name)) != None):
-                print(leaf.name)
+                #print(leaf.name)
                 outgroup1 = self.t.get_leaves_by_name(str(leaf.name))[0]
                 outgroup2 = leaf
-                print(outgroup1, outgroup2)
+                #print(outgroup1, outgroup2)
                 break
 
         self.t.set_outgroup(outgroup1)
@@ -1126,12 +1126,14 @@ def main():
         if args.unrooted:
             y1 = y.EF_U_RF()
             y2 = y.U_RF_Plus()
+            z1 = y1[0].robinson_foulds(y1[1], unrooted_trees=True)[0]
+            z2 = y2[0].robinson_foulds(y2[1], unrooted_trees=True)[0]
         else:
             y1 = y.EF_R_RF()
             #y3 = compareTree(msn[1], msn[j])
             y2 = y.R_RF_Plus()
-        z1 = y1[0].robinson_foulds(y1[1])[0]
-        z2 = y2[0].robinson_foulds(y2[1])[0]
+            z1 = y1[0].robinson_foulds(y1[1])[0]
+            z2 = y2[0].robinson_foulds(y2[1])[0]
 
 
         if args.outputfile:
